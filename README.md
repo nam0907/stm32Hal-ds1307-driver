@@ -89,7 +89,7 @@ uint8_t DS1307_WRITE_RTC(&DS1307, hour, minute, second, dayOfWeek, day, month, y
 ```c
 DS1307_TypeDef DS1307;
 
-DS1307_GetTime(&DS1307);
+DS1307_READ_RTC(&DS1307);
 
 printf("hh/mm/ss: %02d:%02d:%02d\n",DS1307.hour,DS1307.minute,DS1307.second);
 ```
